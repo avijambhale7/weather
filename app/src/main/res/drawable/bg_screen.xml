@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Background for search & settings screens -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="270"
+        android:centerColor="#1A1446"
+        android:endColor="#0B1026"
+        android:startColor="#0B1026" />
+</shape>

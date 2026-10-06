@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Highlighted "Now" capsule: neon cyan → violet -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="270"
+        android:endColor="#B37C4DFF"
+        android:startColor="#B300B8D4" />
+    <stroke
+        android:width="1dp"
+        android:color="#99FFFFFF" />
+    <corners android:radius="32dp" />
+</shape>

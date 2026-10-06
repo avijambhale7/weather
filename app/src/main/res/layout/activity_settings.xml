@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnBack"
+            android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="44dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="←"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚙️  Settings"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Units -->
+        <LinearLayout style="@style/GlassCard">
+
+            <TextView
+                style="@style/SectionTitle"
+                android:text="@string/units" />
+
+            <TextView
+                style="@style/SettingsLabel"
+                android:layout_marginTop="0dp"
+                android:text="@string/temperature" />
+
+            <RadioGroup
+                android:id="@+id/rgTemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbCelsius"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Celsius (°C)"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/rbFahrenheit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fahrenheit (°F)"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/SettingsLabel"
+                android:layout_marginTop="12dp"
+                android:text="@string/wind_speed" />
+
+            <RadioGroup
+                android:id="@+id/rgWind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbKmh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="km/h"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/rbMs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="m/s"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/rbMph"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="mph"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Display -->
+        <LinearLayout style="@style/GlassCard">
+
+            <TextView
+                style="@style/SectionTitle"
+                android:text="@string/display" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/sw24h"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/time_24h"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAnim"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/animated_bg"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swGps"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/gps_launch"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Air quality provider -->
+        <LinearLayout style="@style/GlassCard">
+
+            <TextView
+                style="@style/SectionTitle"
+                android:text="@string/air_quality" />
+
+            <RadioGroup
+                android:id="@+id/rgAq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbAqOpenMeteo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aq_open_meteo"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/rbAqGoogle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aq_google"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/googleBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etGoogleKey"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_glass_pill"
+                    android:hint="@string/google_key_hint"
+                    android:inputType="textNoSuggestions"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/text_muted"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/google_key_help"
+                    android:textColor="@color/text_muted"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- About -->
+        <LinearLayout style="@style/GlassCard">
+
+            <TextView
+                style="@style/SectionTitle"
+                android:text="@string/about" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/about_text"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

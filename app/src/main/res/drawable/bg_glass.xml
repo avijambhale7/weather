@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Glassmorphism card: translucent gradient + light border -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="315"
+        android:endColor="#14FFFFFF"
+        android:startColor="#30FFFFFF" />
+    <stroke
+        android:width="1dp"
+        android:color="#3DFFFFFF" />
+    <corners android:radius="24dp" />
+</shape>

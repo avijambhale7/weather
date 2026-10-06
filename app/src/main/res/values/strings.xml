@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Weather &amp; Forecast</string>
+    <string name="map_title">Tap Map for Temperature</string>
+    <string name="map_hint">Tap anywhere on the map to see its temperature</string>
+    <string name="satellite">Satellite</string>
+    <string name="street_map">Street Map</string>
+
+    <string name="hourly_title">⏱  HOURLY FORECAST</string>
+    <string name="trend_title">📈  24-HOUR TEMPERATURE TREND</string>
+    <string name="daily_title">📅  10-DAY FORECAST</string>
+    <string name="aqi_title">🫁  AIR QUALITY</string>
+    <string name="trend_hint">Drag across the graph to see each hour</string>
+    <string name="credits">Weather &amp; air quality: Open-Meteo.com · Maps: Esri</string>
+
+    <string name="search_hint">Search city</string>
+    <string name="use_location">Use current location</string>
+    <string name="use_location_sub">Detect with GPS</string>
+    <string name="recent">RECENT SEARCHES</string>
+    <string name="results">RESULTS</string>
+
+    <string name="settings">Settings</string>
+    <string name="units">UNITS</string>
+    <string name="temperature">Temperature</string>
+    <string name="wind_speed">Wind speed</string>
+    <string name="display">DISPLAY</string>
+    <string name="time_24h">24-hour time</string>
+    <string name="animated_bg">Animated background</string>
+    <string name="gps_launch">Use current location on launch</string>
+    <string name="air_quality">AIR QUALITY</string>
+    <string name="aq_open_meteo">Open-Meteo (free, no key needed)</string>
+    <string name="aq_google">Google Air Quality API</string>
+    <string name="google_key_hint">Paste Google API key</string>
+    <string name="google_key_help">Enable \"Air Quality API\" in Google Cloud Console, create an API key and paste it here. If the key fails, the app falls back to Open-Meteo.</string>
+    <string name="about">ABOUT</string>
+    <string name="about_text">Weather &amp; Forecast v2.0\nWeather &amp; air quality: Open-Meteo.com\nMaps: Esri World Imagery\nMoon times: calculated on device</string>
+
+    <string name="loc_title">📍 Allow location access?</string>
+    <string name="loc_message">Weather &amp; Forecast uses your location to show the weather where you are right now. You can also search for any city instead.</string>
+    <string name="allow">Allow</string>
+    <string name="search_city">Search city</string>
+    <string name="gps_off_title">Location is turned off</string>
+    <string name="gps_off_message">Turn on location services to get weather for where you are.</string>
+    <string name="open_settings">Open settings</string>
+    <string name="cancel">Cancel</string>
+</resources>
